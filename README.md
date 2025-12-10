@@ -27,50 +27,15 @@ CryptoBeacon is a comprehensive cryptocurrency tracking and analysis application
 
 ### Quick Start (Windows)
 
-1.  **Backend**: Run `start_backend.bat` in the root directory.
-2.  **Frontend**: Run `start_frontend.bat` in the root directory.
+1.  **Environment Setup**:
+    *   Navigate to the `backend` directory.
+    *   Copy `.env.example` to `.env` and configure your variables (MongoDB URI, API keys, etc.).
+    *   Ensure you have installed the backend dependencies: `pip install -r requirements.txt` (inside a virtual environment if preferred).
 
-### Manual Setup
+2.  **Run the Application**:
+    *   **Backend**: Double-click or run `start_backend.bat` in the root directory.
+    *   **Frontend**: Double-click or run `start_frontend.bat` in the root directory.
 
-#### Backend
-
-1.  Navigate to the backend directory:
-    ```bash
-    cd backend
-    ```
-2.  Create and activate a virtual environment:
-    ```bash
-    python -m venv venv
-    .\venv\Scripts\activate
-    ```
-3.  Install dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-4.  Set up environment variables:
-    *   Copy `.env.example` to `.env`.
-    *   Update values in `.env` (MongoDB URI, API keys, Secret Key).
-5.  Start the server:
-    ```bash
-    python -m uvicorn app.main:app --reload
-    ```
-    The API will be available at `http://localhost:8000`.
-
-#### Frontend
-
-1.  Navigate to the frontend directory:
-    ```bash
-    cd frontend
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
-3.  Start the development server:
-    ```bash
-    npm run dev
-    ```
-    The application will be available at `http://localhost:5173`.
 
 ## Environment Variables
 

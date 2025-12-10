@@ -1,0 +1,23 @@
+fastapi
+uvicorn
+motor
+pydantic
+pydantic-settings
+python-jose[cryptography]
+passlib[argon2]
+python-multipart
+email-validator
+python-dotenv
+requests
+httpx
+google-generativeai
+pandas
+numpy
+prophet
+yfinance
+# New ML dependencies for model comparison
+pmdarima
+tensorflow
+xgboost
+scikit-learn
+APScheduler==3.10.4
